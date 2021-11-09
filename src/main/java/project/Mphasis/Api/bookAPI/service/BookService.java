@@ -26,6 +26,7 @@ public class BookService {
     List<BookDto> newBooks = new ArrayList<>();
     @Autowired
     private BookRepository repository;
+    //Taking JSON from external API and working on it to dump into local Database.
     public List<BookDto> fetchBooks()
     {
         String url = "https://s3-ap-southeast-1.amazonaws.com/he-public-data/books8f8fe52.json";
